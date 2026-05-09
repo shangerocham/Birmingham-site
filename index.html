@@ -1,60 +1,151 @@
-<form
-  name="contact"
-  method="POST"
-  data-netlify="true"
-  class="w-full max-w-4xl mx-auto bg-black/80 border border-yellow-500 rounded-2xl p-6 md:p-8 shadow-2xl backdrop-blur-sm"
->
-  <input type="hidden" name="form-name" value="contact" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birmingham Home Buyers</title>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
 
-    <input
-      type="text"
-      name="name"
-      placeholder="Full Name"
-      required
-      class="w-full p-4 rounded-xl bg-zinc-900 text-white border border-zinc-700 focus:border-yellow-500 outline-none"
-    />
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
 
-    <input
-      type="email"
-      name="email"
-      placeholder="Email Address"
-      required
-      class="w-full p-4 rounded-xl bg-zinc-900 text-white border border-zinc-700 focus:border-yellow-500 outline-none"
-    />
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+background:
+radial-gradient(circle at top,#1f4fff 0%,#050816 60%);
+}
 
-    <input
-      type="tel"
-      name="phone"
-      placeholder="Phone Number"
-      class="w-full p-4 rounded-xl bg-zinc-900 text-white border border-zinc-700 focus:border-yellow-500 outline-none"
-    />
+.hero h1{
+font-size:58px;
+max-width:900px;
+line-height:1.1;
+margin-bottom:20px;
+}
 
-    <input
-      type="text"
-      name="location"
-      placeholder="Property Location"
-      class="w-full p-4 rounded-xl bg-zinc-900 text-white border border-zinc-700 focus:border-yellow-500 outline-none"
-    />
+.hero p{
+font-size:22px;
+opacity:0.8;
+max-width:700px;
+margin-bottom:40px;
+}
 
-  </div>
+.glow-btn{
+padding:18px 40px;
+border:none;
+border-radius:60px;
+font-size:20px;
+background:#2962ff;
+color:white;
+cursor:pointer;
+box-shadow:0 0 25px #2962ff;
+transition:0.3s;
+}
 
-  <textarea
-    name="message"
-    placeholder="Tell us about your property or enquiry"
-    rows="5"
-    class="w-full mt-4 p-4 rounded-xl bg-zinc-900 text-white border border-zinc-700 focus:border-yellow-500 outline-none"
-  ></textarea>
+.glow-btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 45px #2962ff;
+}
 
-  <button
-    type="submit"
-    class="w-full mt-6 bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-4 rounded-xl transition-all duration-300 text-lg"
-  >
-    Get My Free Offer
-  </button>
+.form-section{
+margin-top:-100px;
+display:flex;
+justify-content:center;
+padding:20px;
+}
 
-  <div class="text-center text-zinc-400 text-sm mt-4">
-    Confidential • No Obligation • Fast Response
-  </div>
-</form>
+.form-box{
+background:white;
+color:black;
+padding:40px;
+width:100%;
+max-width:700px;
+border-radius:30px;
+box-shadow:0 20px 60px rgba(0,0,0,0.4);
+}
+
+.form-box h2{
+font-size:38px;
+margin-bottom:30px;
+text-align:center;
+}
+
+input, select{
+width:100%;
+padding:18px;
+margin-bottom:20px;
+border-radius:15px;
+border:1px solid #ddd;
+font-size:18px;
+}
+
+.submit-btn{
+width:100%;
+padding:20px;
+border:none;
+border-radius:15px;
+background:#2962ff;
+color:white;
+font-size:22px;
+cursor:pointer;
+}
+
+.features{
+padding:100px 20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:#11182f;
+padding:35px;
+border-radius:25px;
+transition:0.3s;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#162040;
+}
+
+.card h3{
+font-size:28px;
+margin-bottom:15px;
+}
+
+.card p{
+opacity:0.75;
+line-height:1.6;
+}
+
+footer{
+padding:50px 20px;
+text-align:center;
+opacity:0.5;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">

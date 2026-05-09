@@ -164,24 +164,30 @@ font-size:14px;
 <input type="hidden" name="form-name" value="contact">
 
 <input type="text" name="postcode" placeholder="Property postcode">
+<form name="contact" method="POST" data-netlify="true">
 
-<select name="condition">
-<option>Property condition</option>
+<input type="hidden" name="form-name" value="contact">
+
+<input type="text" name="postcode" placeholder="Property postcode" required>
+
+<select name="condition" required>
+<option value="">Property condition</option>
 <option>Excellent</option>
 <option>Good</option>
 <option>Needs work</option>
 <option>Full refurbishment</option>
 </select>
 
-<input type="email" name="email" placeholder="Email address">
+<input type="email" name="email" placeholder="Email address" required>
 
-<input type="tel" name="phone" placeholder="Phone number">
+<input type="tel" name="phone" placeholder="Phone number" required>
 
 <button type="submit" class="submit-btn">
 Receive Offer
 </button>
 
 </form>
+
 
 </div>
 </section>
